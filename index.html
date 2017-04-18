@@ -10,8 +10,31 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+        <div class="fixed-top p-5">
+          <span id="date"></span>
+          <h1 id="time" class="display-4"></h1>
+        </div>
+        <div id="nav" class="fixed-bottom text-center py-5">
+          <img id="instagram" src="./img/instagram.png" class="pr-5">
+          <img id="youtube" src="./img/youtube-play.png">
+          <img id="twitter" src="./img/twitter.png" class="pl-5">
+        </div>
+        <div id="instagram-content" class="overlay">
+          <img id="instagram" src="./img/instagram.png">
+          <img id="close-instagram" class="float-right" src="./img/window-close.png">
+        </div>
+        <div id="youtube-content" class="overlay">
+          <img id="youtube" src="./img/youtube-play.png">
+          <img id="close-youtube" class="float-right" src="./img/window-close.png">
+        </div>
+        <div id="twitter-content" class="overlay">
+          <img id="twitter" src="./img/twitter.png">
+          <img id="close-twitter" class="float-right" src="./img/window-close.png">
+        </div>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/moment.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>
