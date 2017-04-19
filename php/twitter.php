@@ -18,3 +18,5 @@
     $statuses = $connection->get("statuses/home_timeline", ["count" => 25, "exclude_replies" => true]);
     
     echo json_encode($statuses);
+    
+    die();
