@@ -10,9 +10,14 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <div class="fixed-top p-5">
-          <span id="date"></span>
-          <h1 id="time" class="display-4"></h1>
+        <div class="row fixed-top p-5">
+          <div class="col">
+            <span id="date"></span>
+            <h1 id="time" class="display-4"></h1>
+          </div>
+          <div class="col">
+            <div id="weather" class="float-right text-right"></div>
+          </div>
         </div>
         <div id="nav" class="fixed-bottom text-center py-5">
           <img id="instagram" src="./img/instagram.png" class="pr-5">
@@ -35,7 +40,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/moment.js"></script>
-        <script src="js/plugins.js"></script>
+        <script src="js/vendor/jquery.simpleWeather.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
