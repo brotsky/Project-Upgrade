@@ -57,3 +57,24 @@ function closeTwitter() {
 $('#close-instagram').click(closeInstagram);
 $('#close-youtube').click(closeYoutube);
 $('#close-twitter').click(closeTwitter);
+
+
+$(document).ready(function() {
+  $.simpleWeather({
+    location: 'Los Angeles, CA',
+    woeid: '',
+    unit: 'f',
+    success: function(weather) {
+      html = '<h1 class="display-3"><img src="../img/weather-icons/'+weather.code+'.png"> '+weather.temp+'&deg;'+'</h1>';
+
+      html += '<p>L '+weather.low+'&deg;</p>';
+
+      html += '<p>H '+weather.high+'&deg;</p>';
+
+      $("#weather").html(html);
+    },
+    error: function(error) {
+      $("#weather").html('<p>'+error+'</p>');
+    }
+  });
+});
