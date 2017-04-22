@@ -2,8 +2,8 @@ function hideNav() {
   $('#nav').fadeOut();
 }
 
-function openInstagram() {
-  $('#instagram-content').slideDown();
+function openSpotify() {
+  $('#spotify-content').slideDown();
   hideNav();
 }
 
@@ -21,8 +21,8 @@ function showNav() {
   $('#nav').fadeIn();
 }
 
-function closeInstagram() {
-  $('#instagram-content').slideUp();
+function closeSpotify() {
+  $('#spotify-content').slideUp();
   showNav();
 }
 
@@ -61,11 +61,11 @@ function getDateTime() {
   $('#time').html(time);
 }
 
-$('#instagram').click(openInstagram);
+$('#spotify').click(openSpotify);
 $('#youtube').click(openYoutube);
 $('#twitter').click(openTwitter);
 
-$('#close-instagram').click(closeInstagram);
+$('#close-spotify').click(closeSpotify);
 $('#close-youtube').click(closeYoutube);
 $('#close-twitter').click(closeTwitter);
 
