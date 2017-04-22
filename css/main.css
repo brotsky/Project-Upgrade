@@ -20,3 +20,13 @@ body {
 #nav img, .overlay img {
   height: 48px;
 }
+
+.overlay .content {
+  display: flex;
+  height: calc(100% - 72px);
+  margin-top: 24px;
+}
+
+.overlay .content iframe {
+  width: 100%;
+}
