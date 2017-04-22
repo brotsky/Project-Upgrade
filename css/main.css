@@ -15,6 +15,7 @@ body {
   position: absolute;
   padding: 2rem;
   z-index: 9999;
+  overflow: hidden;
 }
 
 #nav img, .overlay img {
@@ -26,8 +27,31 @@ body {
   height: calc(100% - 72px);
   margin-top: 24px;
   justify-content: center;
+  overflow: auto;
 }
 
 #spotify-content iframe {
   width: 100%;
+}
+
+.tweets .tweet {
+  margin: 1rem 0;
+  padding: 1rem 0.5rem;
+}
+
+.tweets .tweet img {
+  float: left;
+  margin: 1rem;
+}
+
+.tweets .tweet strong {
+  margin-right: 0.5rem;
+}
+
+.tweets .tweet small {
+  margin-left: 0.5rem;
+}
+
+.tweets .tweet .text {
+  display: block;
 }
