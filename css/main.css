@@ -2,6 +2,10 @@
 @import './boilerplate.css';
 @import './bootstrap.min.css';
 
+html {
+  font-size: 1.6rem;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -10,7 +14,7 @@ body {
 .overlay {
   display: none;
   width: 100%;
-  height: 60%;
+  height: 50%;
   bottom: 0;
   position: absolute;
   padding: 2rem;
