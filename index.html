@@ -8,6 +8,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script>
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/player_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            var player;
+            function onYouTubePlayerAPIReady() {
+              player = new YT.Player('ytplayer', {
+                height: '360',
+                width: '640',
+                playerVars: {
+                  'listType': 'playlist',
+                  'list': 'PL1T9mxfDfo3WxxxQJ5ppKpyymw47GPKoY'
+                }
+              });
+            }
+        </script>
     </head>
     <body>
         <div class="row fixed-top p-5">
@@ -47,6 +65,9 @@
         <div id="youtube-content" class="overlay">
           <img id="youtube" src="./img/youtube-play.png">
           <img id="close-youtube" class="float-right" src="./img/window-close.png">
+          <div class="content">
+            <div id="ytplayer"></div>
+          </div>
         </div>
         <div id="twitter-content" class="overlay">
           <img id="twitter" src="./img/twitter.png">
